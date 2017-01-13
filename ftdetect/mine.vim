@@ -6,6 +6,7 @@
 "
 " misc.:
 "   - `filetype on` command is necessary to enable the filetype detection.
+"   - This file is usually loaded once when `filetype on` is called in .vimrc.
 "   - `set filetype` shows the filetype of the current file.
 "
 " example:
