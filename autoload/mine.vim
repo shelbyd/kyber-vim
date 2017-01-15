@@ -8,6 +8,6 @@
 "
 
 " Declare function
-function! mine#do_autoload() abort
-    echo 'do autoload'
-endfunction
+" function! mine#do_autoload() abort
+"     echo 'do autoload'
+" endfunction
