@@ -24,10 +24,12 @@ set cpo&vim
 " What should be stored depends on what will be changed in the ftplugin.
 let b:undo_ftplugin = "setl com< cms< fo<"
 
+""""""""""""""""""""
 " Add commands here
+""""""""""""""""""""
 " Use 'setlocal' command to set options.
 " Use 'map <buffer>' command to set key mappings.
-" Use 'command! -buffer' comand to set command.
+" Use 'command -buffer' comand to set command.
 " Use 's:var' or 'b:var' for variables.
 " Use 'function!' to declare functions.
 
