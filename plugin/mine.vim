@@ -13,7 +13,7 @@
 if exists("g:loaded_mine")
     finish
 endif
-let b:loaded_mine = 1
+let g:loaded_mine = 1
 
 " To use line continuatione, remove 'C' from 'cpoptions'
 let s:cpo_save = &cpo
@@ -37,7 +37,10 @@ endfunction
 
 " Declare command
 if !exists(":DoSomething")
+    " Use function in the script
     command -nargs=0 DoSomething :call s:do_something()
+    " Use autoload function
+    command -nargs=0 DoAutoload :call mine#do_autoload()
 endif
 
 " Restore 'cpoptions'
