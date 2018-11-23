@@ -24,7 +24,7 @@ set cpo&vim
 function! s:kyber_do(cmd, ...) range
     let range = getpos("'<")[1]. ",". getpos("'<")[2]. ":". getpos("'>")[1]. ",". getpos("'>")[2]
     let vargs = join(a:000, " ")
-    execute ":!kyber" "do" "--file" expand('%') "--range" range a:cmd vargs
+    execute ":!kyber" "--file" expand('%') "--range" range a:cmd vargs
     redraw!
 endfunction
 
